@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --purple:#8e44ad;
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --light-color:#666;
+    --light-white:#ccc;
+    --light-bg:#f5f5f5; 
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+ }
+
+body, html{
+    background-color: aliceblue;  
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 5px;
+}
+
+nav{
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 75px;
+    background-color: rgb(83, 103, 156);
+    color: white;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+nav ul a:hover, nav ul a.active{
+    text-decoration: underline;
+    color: rgb(230, 224, 224);
+}
+
+nav ul li{
+    padding: 0 18px;
+
+}
+
+/* styling search bar */
+.search input[type=text]{
+    width:300px;
+    height:35px;
+    border-radius:5px;
+    border: none;
+}
+      
+.search{
+    float:right;
+    margin:7px;
+}
+      
+.search button{
+    background-color: #ffffff;
+    color: gray;
+    float: right;
+    padding: 7.5px 10px;
+    margin-left: 2px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} 
+
+.search button:hover{
+    background-color: gainsboro;
+}
+
+.brand img{
+    width: 80px;
+    height: 80px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+#home{
+    background-image: url("/img/online_vision.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right{
+    position: absolute;
+    right: 34px;
+    top: 12;
+    display: inline-block;
+}
+
+.btnnav{
+    font-size: 30px;
+    display: inline;
+    width: 130px;
+    background-color: rgb(16 56 75);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btnnav:hover{
+    background-color: rgb(41, 91, 114);
+}
+
+/* home section */
+section{
+    padding:3rem 2rem;
+ }
+
+ .option-btn,
+.white-btn{
+   display: inline-block;
+   margin-top: 1rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   color:var(--white);
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+
+.option-btn:hover{
+   background-color: var(--black);
+}
+
+ .white-btn{
+   background-color: var(--purple);
+}
+
+.option-btn{
+    background-color: var(--orange);
+ }
+
+.white-btn:hover{
+    background-color: var(--white);
+    color:var(--black);
+ }
+
+ .title{
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color:var(--black);
+    font-size: 4rem;
+ }
+
+ .home{
+    min-height: 70vh;
+    background:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./img/learning_boy.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .home .content{
+    text-align: center;
+    width: 60rem;
+ }
+ 
+ .home .content h3{
+    font-size: 5.5rem;
+    color:var(--white);
+    text-transform: uppercase;
+ }
+ 
+ .home .content p{
+    font-size:1.8rem;
+    color:var(--light-white);
+    padding:1rem 0;
+    line-height: 1.5;
+ }
+
+ .products .box-container{
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    gap:1.5rem;
+    justify-content: center;
+ }
+ 
+ .products .box-container .box{
+    border-radius: .5rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    text-align: center;
+    border:var(--border);
+    position: relative;
+ }
+ 
+ .products .box-container .box .image{
+    height: 30rem;
+ }
+ 
+ .products .box-container .box .name{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:var(--black);
+ }
+ 
+ .products .box-container .box .qty{
+    width: 100%;
+    padding:1.2rem 1.4rem;
+    border-radius: .5rem;
+    border:var(--border);
+    margin:1rem 0;
+    font-size: 2rem;
+ }
+ 
+ .products .box-container .box .price{
+    position: absolute;
+    top:1rem; left:1rem;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 2.5rem;
+    color:var(--white);
+    background-color: var(--red);
+ }
+
+ /* courses */
+ .heading{
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    margin-bottom: 2rem;
+ }
+ 
+ .btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    color:var(--white);
+    font-size: 1.7rem;
+    padding:1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+ }
+ 
+ .btn:hover{
+    background-color: var(--black);
+ }
+ 
+ .message{
+    background-color: var(--blue);
+    position: sticky;
+    top:0; left:0;
+    z-index: 10000;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding:1.5rem 2rem;
+    margin:0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+ }
+ 
+ .message span{
+    font-size: 2rem;
+    color:var(--black);
+ }
+ 
+ .message i{
+    font-size: 2.5rem;
+    color:var(--black);
+    cursor: pointer;
+ }
+ 
+ .message i:hover{
+    color:var(--red);
+ }
+
+ .products .box-container .box img{
+    height: 25rem;
+ }
+ 
+ .products .box-container .box h3{
+    margin:1rem 0;
+    font-size: 2.5rem;
+    color:var(--black);
+ }
+ 
+ /* .products .box-container .box .price{
+    font-size: 2.5rem;
+    color:var(--black);
+ } */
+
+/* section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+section .imgBx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+
+
+
+@media (max-width: 768px){
+    /* section .imgBx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    } */
+}

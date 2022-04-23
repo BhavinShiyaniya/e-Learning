@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/* font-family: 'Ubuntu', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+:root{
+    --blue:#2980b9;
+    --red:tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid #999;
+ }
+ 
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+ 
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ }
+
+ .container{
+    max-width: 1200px;
+    margin:0 auto;
+    /* padding-bottom: 5rem; */
+ }
+ 
+ section{
+    padding:2rem;
+ }
+ 
+ .heading{
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    margin-bottom: 2rem;
+ }
+ 
+ .btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+    color:var(--white);
+    font-size: 1.7rem;
+    padding:1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+ }
+ 
+ .btn:hover{
+    background-color: var(--black);
+ }
+ 
+ .message{
+    background-color: var(--blue);
+    position: sticky;
+    top:0; left:0;
+    z-index: 10000;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding:1.5rem 2rem;
+    margin:0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+ }
+ 
+ .message span{
+    font-size: 2rem;
+    color:var(--black);
+ }
+ 
+ .message i{
+    font-size: 2.5rem;
+    color:var(--black);
+    cursor: pointer;
+ }
+ 
+ .message i:hover{
+    color:var(--red);
+ }
+ 
+ .products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap:1.5rem;
+    justify-content: center;
+ }
+ 
+ .products .box-container .box{
+    text-align: center;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    border-radius: .5rem;
+ }
+ 
+ .products .box-container .box img{
+    height: 25rem;
+ }
+ 
+ .products .box-container .box h3{
+    margin:1rem 0;
+    font-size: 2.5rem;
+    color:var(--black);
+ }
+ 
+ .products .box-container .box .price{
+    font-size: 2.5rem;
+    color:var(--black);
+ }
+ 
+
+ /* media queries  */
+ 
+ 
+ 
+ @media (max-width:991px){
+ 
+    html{
+       font-size: 55%;
+    }
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+    html{
+       font-size: 50%;
+    }
+ 
+    .heading{
+       font-size: 3rem;
+    }
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body, html{
+    background-color: aliceblue; 
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+} */
+
+/* Navigation Bar: Logo and Image */
+/* #logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 5px;
+}
+
+nav{
+    font-family: 'Varela Round', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 75px;
+    background-color: rgb(83, 103, 156);
+    color: white;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+nav ul a:hover, nav ul a.active{
+    text-decoration: underline;
+    color: rgb(230, 224, 224);
+}
+
+nav ul li{
+    padding: 0 18px;
+
+}
+
+.brand img{
+    width: 80px;
+    height: 80px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+#home{
+    background-image: url("./img/online_course.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right{
+    position: absolute;
+    right: 34px;
+    top: 12;
+    display: inline-block;
+}
+
+.btn{
+    font-size: 30px;
+    display: inline;
+    width: 130px;
+    background-color: rgb(16 56 75);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(41, 91, 114);
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+} */
+
+/* section .imgBx{ */
+    /* position: relative;
+    width: 100%;
+    height: 100%; */
+    /* background-image: url("./img/online_course.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* section .imgBx:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(225deg, #e91e63, #03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+section .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    section .imgBx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+} */
